@@ -1,0 +1,83 @@
+! ROFI
+rofi.color-enabled: true
+rofi.color-window: #ffffff, #ffffff, #333333
+rofi.color-normal: #ffffff, #333333, #ffffff, #268bd2, #ffffff
+rofi.color-active: #ffffff, #268bd2, #ffffff, #268bd2, #ffffff
+rofi.color-urgent: #ffffff, #c3382c, #ffffff, #c3382c, #ffffff
+rofi.separator-style:			solid
+rofi.font:				FiraSansCondensed 26
+rofi.padding:				32
+rofi.width:				40
+rofi.lines:				6
+rofi.line-margin:			24
+
+! URXVT / TERMINAL
+URxvt.scrollBar:			false
+URxvt.font:				xft:GohuFont:size=12
+URxvt.perl-ext-common:			default,matcher
+URxvt.url-launcher:			/usr/bin/firefox
+URxvt.matcher.button:			1
+URxvt.urgentOnBell:			true
+
+URxvt*scrollColor:			#a8a19f
+URxvt*highlightColor:			#68615e
+URxvt*highlightTextColor:		#9c9491
+
+*cursorColor:				#a8a19f
+
+! - Generated from: http://ciembor.github.io/4bit/
+
+! --- special colors ---
+
+*background: 				#2a2a29
+*foreground: 				#ffffff
+
+! --- standard colors ---
+
+! black
+*color0: 				#000000
+
+! bright_black
+*color8: 				#454545
+
+! red
+*color1: 				#ea1567
+
+! bright_red
+*color9: 				#ed3c80
+
+! green
+*color2: 				#67ea15
+
+! bright_green
+*color10: 				#80ed3c
+
+! yellow
+*color3: 				#ea9815
+
+! bright_yellow
+*color11: 				#eda93c
+
+! blue
+*color4: 				#1567ea
+
+! bright_blue
+*color12: 				#3c80ed
+
+! magenta
+*color5: 				#9815ea
+
+! bright_magenta
+*color13: 				#a93ced
+
+! cyan
+*color6: 				#15ea98
+
+! bright_cyan
+*color14: 				#3ceda9
+
+! white
+*color7: 				#e4e4e4
+
+! bright_white
+*color15: 				#ffffff
