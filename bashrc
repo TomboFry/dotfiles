@@ -17,6 +17,8 @@ alias f='sudo find / | grep'
 alias pm-r='sudo pacman -Ru $(pacman -Qdtq)'
 # Apparently nano doesn't support no wrapping by default on Arch, what's with that? :O
 alias nano='nano -w'
+# Resume screen instance
+alias r='screen -d -r'
 
 # Print the time in a rainbow colour!
 toilet -f smmono9 -F border --gay $(date '+%H:%M:%S')

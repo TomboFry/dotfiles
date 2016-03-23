@@ -13,7 +13,7 @@ rofi.line-margin:			24
 
 ! URXVT / TERMINAL
 URxvt.scrollBar:			false
-URxvt.font:				xft:GohuFont:size=12
+URxvt.font:				xft:Terminus:size=12
 URxvt.perl-ext-common:			default,matcher
 URxvt.url-launcher:			/usr/bin/firefox
 URxvt.matcher.button:			1
