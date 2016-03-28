@@ -1,8 +1,10 @@
 #!/bin/bash
+
 tmpbg=/tmp/ss.png
-#icon=~/.dotfiles/lock.png
+
 scrot $tmpbg
-convert $tmpbg -scale 5% -scale 2000% $tmpbg
-#convert $tmpbg -blur 0x8 $tmpbg
-#convert $tmpbg $icon -gravity center -composite -matte $tmpbg
+
+# Scales to 32x32 blocks
+convert $tmpbg -scale 3.125% -scale 3200% $tmpbg
+
 i3lock -u -i $tmpbg

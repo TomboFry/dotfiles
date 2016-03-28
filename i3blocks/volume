@@ -1,0 +1,8 @@
+#!/bin/bash
+
+col=$(cat colours)
+
+full_text=$(amixer get Master | sed -n 'N;s/^.*\[\([0-9]\+%\).*$/\1/p')
+echo $full_text
+echo $full_text
+echo $col

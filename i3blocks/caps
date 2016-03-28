@@ -1,0 +1,11 @@
+#!/bin/bash
+
+res=$(xset -q | egrep -o "Caps Lock:\ *(off|on)" | egrep -o "(off|on)")
+
+col="#2b2b2a"
+
+if [[ $res == "on" ]]; then col="#00FF00"; fi
+
+echo CAPS
+echo CAPS
+echo $col

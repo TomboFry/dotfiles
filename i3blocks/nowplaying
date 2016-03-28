@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cur=$(ncmpcpp --current-song="{{%30a - }%30t}|{%40f}")
+#song=$(cat; echo "EOF")
+song=$(echo -e $cur | sed -e "s/\[\(playing\|paused\)\].*//")
+# | sed -n '1p')
+status=$(echo `mpc` | egrep -o "\[(playing|paused)\]")
+
+if [[ $status == "[paused]" ]]; then res=" - paused - "; else res="$song"; fi
+if [[ $status == "" ]]; then res=" - stopped - "; fi
+
+echo $res
+echo $res
+echo "#FFFFFF"

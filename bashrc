@@ -20,8 +20,5 @@ alias nano='nano -w'
 # Resume screen instance
 alias r='screen -d -r'
 
-# Print the time in a rainbow colour!
-toilet -f smmono9 -F border --gay $(date '+%H:%M:%S')
-
 # Set prompt
 PS1='\n\[\033[1;37m\]\t \u@\h\[\033[00m\] \[\033[1;36m\]\W\[\033[00m\] \[\033[1;37m\]\$\[\033[00m\] '

@@ -12,12 +12,14 @@ rofi.lines:				6
 rofi.line-margin:			24
 
 ! URXVT / TERMINAL
+URxvt.geometry:				100x30
 URxvt.scrollBar:			false
 URxvt.font:				xft:Terminus:size=12
 URxvt.perl-ext-common:			default,matcher
 URxvt.url-launcher:			/usr/bin/firefox
 URxvt.matcher.button:			1
 URxvt.urgentOnBell:			true
+URxvt.internalBorder:			16
 
 URxvt*scrollColor:			#a8a19f
 URxvt*highlightColor:			#68615e
@@ -29,7 +31,7 @@ URxvt*highlightTextColor:		#9c9491
 
 ! --- special colors ---
 
-*background: 				#2a2a29
+*background: 				#2b2b2a
 *foreground: 				#ffffff
 
 ! --- standard colors ---
