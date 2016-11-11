@@ -25,7 +25,7 @@ alias pls='sudo $(fc -ln -1)'
 alias getme='sudo apt install'
 
 # Set prompt
-PS1='\n\[\033[1;37m\]\t \u@\h\[\033[00m\] \[\033[1;36m\]\W\[\033[00m\] \[\033[1;37m\]\$\[\033[00m\] '
+PS1='\n\[\033[1;37m\]\A \h \[\033[1;36m\]\w \[\033[1;37m\]\$\[\033[00m\] '
 
 # Print a short, offensive "fortune" on bash login
 cowsay -T "~/" -e "><" $(fortune -o -s)
