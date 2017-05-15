@@ -1,85 +1,102 @@
 ! ROFI
-rofi.color-enabled: true
-rofi.color-window: #ffffff, #ffffff, #333333
-rofi.color-normal: #ffffff, #333333, #ffffff, #268bd2, #ffffff
-rofi.color-active: #ffffff, #268bd2, #ffffff, #268bd2, #ffffff
-rofi.color-urgent: #ffffff, #c3382c, #ffffff, #c3382c, #ffffff
-rofi.separator-style:			solid
-rofi.font:				FiraSansCondensed 26
-rofi.padding:				32
-rofi.width:				40
-rofi.lines:				6
-rofi.line-margin:			24
+
+rofi.color-enabled:         true
+rofi.color-window:          argb:dd111111, argb:0000000, argb:dd111111
+rofi.color-normal:          argb:0333333,  #aaaaaa,      argb:0333333, argb:0333333, #ffffff
+rofi.color-active:          argb:0333333,  #ffffff,      argb:0333333, argb:0333333, #ffffff
+rofi.color-urgent:          argb:0333333,  #ffadab,      argb:0333333, argb:0333333, #ff7044
+
+! OLD ROFI CONFIG
+! rofi.color-enabled:       true
+! rofi.color-window:        #ffffff, #ffffff, #333333
+! rofi.color-normal:        #ffffff, #333333, #ffffff, #268bd2, #ffffff
+! rofi.color-active:        #ffffff, #268bd2, #ffffff, #268bd2, #ffffff
+! rofi.color-urgent:        #ffffff, #c3382c, #ffffff, #c3382c, #ffffff
+
+rofi.separator-style:       solid
+rofi.font:                  Helvetica Neue Thin 40
+rofi.padding:               128
+rofi.width:                 100
+rofi.lines:                 8
+rofi.line-margin:           40
 
 ! URXVT / TERMINAL
-URxvt.geometry:				100x30
-URxvt.scrollBar:			false
-URxvt.font:				xft:Terminus:size=12
-URxvt.perl-ext-common:			default,matcher
-URxvt.url-launcher:			/usr/bin/firefox
-URxvt.matcher.button:			1
-URxvt.urgentOnBell:			true
-URxvt.internalBorder:			16
+URxvt.geometry:             120x30
+URxvt.scrollBar:            false
+URxvt.font:                 xft:Input Mono:size=11
+URxvt.perl-ext-common:      default,matcher,clipboard
+URxvt.url-launcher:         /usr/bin/firefox
+URxvt.matcher.button:       1
+URxvt.urgentOnBell:         true
+URxvt.internalBorder:       24
+URxvt.cursorBlink:          true
 
-URxvt*scrollColor:			#a8a19f
-URxvt*highlightColor:			#68615e
-URxvt*highlightTextColor:		#9c9491
+URxvt*scrollColor:          #a8a19f
+URxvt*highlightColor:       #68615e
+URxvt*highlightTextColor:   #9c9491
 
-*cursorColor:				#a8a19f
+*cursorColor:               #a8a19f
 
 ! - Generated from: http://ciembor.github.io/4bit/
 
 ! --- special colors ---
 
-*background: 				#2b2b2a
-*foreground: 				#ffffff
+*background:    #2f2f2f
+*foreground:    #ffffff
 
 ! --- standard colors ---
 
 ! black
-*color0: 				#000000
+*color0:        #111111
 
 ! bright_black
-*color8: 				#454545
+*color8:        #454545
 
 ! red
-*color1: 				#ea1567
+*color1:        #ea1567
 
 ! bright_red
-*color9: 				#ed3c80
+*color9:        #ed3c80
 
 ! green
-*color2: 				#67ea15
+*color2:        #67ea15
 
 ! bright_green
-*color10: 				#80ed3c
+*color10:       #80ed3c
 
 ! yellow
-*color3: 				#ea9815
+*color3:        #ea9815
 
 ! bright_yellow
-*color11: 				#eda93c
+*color11:       #eda93c
 
 ! blue
-*color4: 				#1567ea
+*color4:        #1567ea
 
 ! bright_blue
-*color12: 				#3c80ed
+*color12:       #3c80ed
 
 ! magenta
-*color5: 				#9815ea
+*color5:        #9815ea
 
 ! bright_magenta
-*color13: 				#a93ced
+*color13:       #a93ced
 
 ! cyan
-*color6: 				#15ea98
+*color6:        #15ea98
 
 ! bright_cyan
-*color14: 				#3ceda9
+*color14:       #3ceda9
 
 ! white
-*color7: 				#e4e4e4
+*color7:        #e4e4e4
 
 ! bright_white
-*color15: 				#ffffff
+*color15:       #ffffff
+
+
+! XTERM SETTINGS
+XTerm.vt100.faceName:          xft:InputMono:size=12
+XTerm.vt100.bellIsUrgent:      true
+XTerm.vt100.scrollBar:         true
+XTerm.vt100.scrollbar.width:   8

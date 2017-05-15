@@ -1,8 +1,12 @@
 #!/bin/bash
 
-col=$(cat colours)
+full_text=$(amixer get Master | tail -n 1 | awk -F ' ' '{print $5}' | tr -d '[]%')
 
-full_text=$(amixer get Master | sed -n 'N;s/^.*\[\([0-9]\+%\).*$/\1/p')
-echo $full_text
-echo $full_text
-echo $col
+if [[ -z "$full_text" ]]; then
+	notify-send "Pulseaudio" "Started"
+	pulseaudio --start
+fi
+
+echo $full_text%
+echo $full_text%
+echo "#FFFFFF"

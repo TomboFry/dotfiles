@@ -4,5 +4,5 @@
 lat=$(sed '1q;d' ~/.dotfiles/location)
 long=$(sed '2q;d' ~/.dotfiles/location)
 
-# Actually start xflux using these variables and a temperature of 3000 K
-~/.dotfiles/xflux -l $lat -g $long -k 3000
+# Actually start xflux using these variables and a temperature of 2400K
+xflux -l $lat -g $long -k 2400

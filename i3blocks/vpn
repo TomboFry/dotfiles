@@ -1,0 +1,45 @@
+#!/bin/bash
+
+vpn_name=$2
+interface="${BLOCK_INSTANCE:-wlp5s0}"
+
+vpnon() {
+	if [[ -n $(nmcli con show  | grep -E "vpn.*$interface") ]]; then
+		nmcli con down uuid $vpn_name
+	else
+		nmcli con up uuid $vpn_name || true
+		sh ~/.dotfiles/wallpaper.sh /home/tom/Pictures/wallpaper3.jpg
+	fi
+}
+
+vpnoff() {
+	if [[ -n $(nmcli con show  | grep -E "vpn.*$interface") ]]; then
+		nmcli con down uuid $vpn_name
+		sh ~/.dotfiles/wallpaper.sh
+	fi
+}
+
+display() {
+	full_text=$(nmcli con | awk -F"   " "/.*vpn.*$interface/"'{ print $1 }')
+
+	if [[ -z "$full_text" ]]; then
+		exit
+	fi
+
+	echo $full_text
+	echo $full_text
+	echo "#FFFFFF"
+}
+
+case "$1" in
+	on)
+		vpnon
+		;;
+	off)
+		vpnoff
+		;;
+	*)
+		display
+esac
+pkill -SIGRTMIN+13 i3blocks
+exit 0
