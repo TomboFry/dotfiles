@@ -1,9 +1,18 @@
 # dotfiles
-i3 (blocks, lock), urxvt, compton
 
-# screenshot
-![screenshot](https://raw.githubusercontent.com/TomboFry/dotfiles/master/screenshot-20160329.png "29/03/2016")
-Wallpaper changes based on time, showing a brighter wallpaper between 8am and 6pm. I will hopefully eventually make this work for the bar colours as well.
+XTerm/urxvt/st, Oh-my-Zsh, Vim
 
-# TODO:
-Eventually, I will make an install script which will install necessary packages and create symbolic links so I don't have to do it myself. Currently, I am content with how it looks and functions :D
+## Work-in-progress
+
+This repo contains all my currently used configuration files, however I am
+working on writing an install script to fetch all the required packages I use
+on a daily basis, including the following:
+
+* Visual Studio Code
+* XTerm / urxvt / st (I still haven't decided which one to use daily)
+* Rust (Rustup, Cargo, RLS, etc.)
+* ZSH and Oh-my-Zsh
+* Nextcloud Client
+* and more
+
+At the moment, it does not copy the configuration files into the right place, so that will need to be done manually.

@@ -23,8 +23,8 @@ rofi.line-margin:           40
 ! URXVT / TERMINAL
 URxvt.geometry:             120x30
 URxvt.scrollBar:            false
-URxvt.font:                 xft:Input Mono:size=11
-URxvt.perl-ext-common:      default,matcher,clipboard
+URxvt.font:                 xft:Input Mono:size=10
+URxvt.perl-ext-common:      default,matcher
 URxvt.url-launcher:         /usr/bin/firefox
 URxvt.matcher.button:       1
 URxvt.urgentOnBell:         true
@@ -96,7 +96,8 @@ URxvt*highlightTextColor:   #9c9491
 
 
 ! XTERM SETTINGS
-XTerm.vt100.faceName:          xft:InputMono:size=12
+XTerm.vt100.faceName:          xft:InputMonoNarrow:size=10
 XTerm.vt100.bellIsUrgent:      true
 XTerm.vt100.scrollBar:         true
 XTerm.vt100.scrollbar.width:   8
+XTerm.vt100.internalBorder:    16
